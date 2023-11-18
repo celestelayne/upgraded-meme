@@ -42,6 +42,7 @@ const gsapp = document.getElementById('gsapp');
 gsapp.textContent = "look at me using JS!"; 
 // applies text to an element
 gsapp.style.backgroundColor = "tomato";
+document.body.style.backgroundColor = "lemonchiffon";
 // applies a style to the page, must access style property, then CSS property written in camelCase
 gsapp.classList.add('blue'); 
 // adds the class 'blue' to an element
@@ -77,8 +78,8 @@ const getTheKid = document.getElementById('child-element')
 // greatDiv.removeChild(getTheKid);
 
 // Attribute changing
-ga.setAttribute('class', 'great-class-name'); // sets an attribute 'great-class-name' on an element
-ga.removeAttribute('id', 'what-an-id'); // removes 'what-an-id' id from element
+gsapp.setAttribute('class', 'great-class-name'); // sets an attribute 'great-class-name' on an element
+gsapp.removeAttribute('id', 'what-an-id'); // removes 'what-an-id' id from element
 
 // console
 console.log() // outputs a single line of text to console
@@ -93,7 +94,7 @@ console.table() // outputs a table of data into the console
 
 // .classList returns an array of classes that are on an element
 const element = document.getElementById('your-id');
-element.classList; 
+// element.classList; 
 
 // .length - tells you how many items an array contains
 // Can be useful when a selector method like querySelectorAll returns many elements
