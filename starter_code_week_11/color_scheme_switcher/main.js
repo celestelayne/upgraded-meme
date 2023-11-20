@@ -9,35 +9,41 @@ Hint: Classes for each color have already been defined in the CSS tab.
 
 // 1 -- Select each button
 
-let grayBtn = document.getElementById("grayButton");
-let whiteBtn = document.getElementById("whiteButton");
-let blueBtn = document.getElementById("blueButton");
-let yellowBtn = document.getElementById("yellowButton");
+// let grayBtn = document.getElementById("grayButton");
+let grayBtn = document.querySelector("#grayButton");
+let whiteBtn = document.querySelector("#whiteButton");
+let yellowBtn = document.querySelector("#yellowButton");
+let blueBtn = document.querySelector("#blueButton");
+
 
 // 3 -- Write an event handler to change the color of the page when each circle is pressed. Hint: you may need to use style.backgroundColor and style.color
 
 function switchToGray() {
   let body = document.querySelector("body");
-  // body.style.backgroundColor = "gray"
-  body.classList.add('gray-theme')
+  body.style.backgroundColor = "gray"
+  // body.classList.remove("yellow-theme", "white-theme", "blue-theme")
+  // body.classList.add('gray-theme');
 }
 
-function switchToWhite(){
-  let body = document.querySelector("body");
-  // body.style.backgroundColor = "white"
-  body.classList.add('white-theme')
-}
-
-function switchToBlue() {
-  let body = document.querySelector('body')
-  // body.style.backgroundColor = 'blue'
-  body.classList.add('blue-theme');
+function switchToWhite() {
+  let body = document.querySelector("body")
+  body.style.backgroundColor = "white"
+  // body.classList.remove("yellow-theme", "blue-theme", "gray-theme")
+  // body.classList.add("white-theme")
 }
 
 function switchToYellow() {
-  let body = document.querySelector('body');
-  // body.style.backgroundColor = 'yellow'
-  body.classList.add('yellow-theme');
+  let body = document.querySelector("body")
+  body.style.backgroundColor = "yellow"
+  // body.classList.remove("blue-theme", "white-theme", "gray-theme")
+  // body.classList.add("yellow-theme")
+}
+
+function switchToBlue(){
+  let body = document.querySelector("body")
+  body.style.backgroundColor = "blue"
+  // body.classList.remove("yellow-theme", "white-theme", "gray-theme")
+  // body.classList.add("blue-theme")
 }
 
 // 2 -- Add an event listener to each circle
@@ -45,3 +51,4 @@ grayBtn.addEventListener("click", switchToGray);
 whiteBtn.addEventListener("click", switchToWhite);
 blueBtn.addEventListener("click", switchToBlue);
 yellowBtn.addEventListener("click", switchToYellow);
+

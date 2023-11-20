@@ -21,5 +21,5 @@ console.log(anchor)
 const dataTarget = document.querySelectorAll('[data-target]');
 console.log(dataTarget)
 // Select all elements where the data-target attribute equals "#false"
-const dataTargetFalse = document.querySelectorAll('[data-target="#false"]');
+const dataTargetFalse = document.querySelector('[data-target="#false"]');
 console.log(dataTargetFalse)
